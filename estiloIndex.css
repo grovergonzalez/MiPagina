@@ -26,6 +26,10 @@ hr{
     z-index: 2;
 }
 
+#Inicio{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 .nombre{
     color: aqua;
     padding-top: 1px;
@@ -49,7 +53,7 @@ hr{
     height: 200px;
     width: 240px;
     padding-left: 0%;
-    border: 7px solid blue;
+    border: 7px double rgb(122, 202, 255);
 }
 
 .flex-header{
@@ -104,11 +108,7 @@ hr{
 }
 
 .enlaces li a:hover{
-    background-color: rgb(112, 87, 202);
-}
-
-.borde-izquierdo{
-    border-left: 4px dashed rgba(63, 6, 218, 0.753);
+    background-color: rgb(212, 51, 113);
 }
 
 .parrafo-1{
@@ -117,7 +117,7 @@ hr{
     position: relative;
     padding-right: 0%;
     text-align: left;
-    border: 2px solid rgba(63, 6, 218, 0.753);
+    border: 2px solid #D36B00;
 }
 .parrafo-2{
     color: aqua;
@@ -125,7 +125,7 @@ hr{
     position: relative;
     padding-right: 0%;
     text-align: right;
-    border: 2px solid rgba(63, 6, 218, 0.753);
+    border: 2px solid #D36B00;
 }
 
 .parrafo-3{
@@ -134,7 +134,7 @@ hr{
     position: relative;
     padding-right: 0%;
     text-align: right;
-    border: 2px solid rgba(63, 6, 218, 0.753);
+    border: 2px solid #D36B00;
 }
 
 footer {
@@ -160,9 +160,12 @@ footer {
 .Redes-Sociales{
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
     padding-left: 20%;
+    z-index: 2;
+    position: relative;
 }
 
 .Icono{
@@ -171,7 +174,6 @@ footer {
     width: 50px;
     border-radius: 50px;
     border: 1px solid #f2f2f2;
-    background-image: url(git.png);
     background-position: center;
     background-size: 80%;
     background-repeat: no-repeat;
