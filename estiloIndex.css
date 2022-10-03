@@ -1,0 +1,139 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#fondo{
+    min-height: 100vh;
+    position: relative;
+}
+
+video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.capa{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #1c1c1d;
+    opacity: 0.5;
+    mix-blend-mode: overlay;
+}
+
+.nombre{
+    color: aqua;
+    padding-top: 0.2%;
+    position: relative;
+    z-index: 2;
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    font-size: large;
+}
+
+.tittle{
+    font-size: 50px;
+    color: coral;
+}
+
+.foto{
+    position: absolute;
+    padding-top: 5%;
+    z-index: 2;
+    height: 200px;
+    width: 240px;
+    padding-left: 2%;
+}
+
+.flex-header{
+    padding: 2rem;
+    flex-basis: 0%;
+    flex-grow: 0;
+    flex-shrink: 1;
+} 
+.flex-main{
+    flex-basis: 0%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-nav{
+    flex-basis: 0%;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+.flex-article{
+    flex-basis: 0%;
+    flex-grow: 4;
+    flex-shrink: 1;
+}
+.flex-aside{
+    flex-basis: 0%;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.flex-footer{
+    padding: 2rem;
+    flex-basis: 0%;
+    flex-grow: 0;
+    flex-shrink: 1;
+}
+
+.correo{
+    color: chartreuse;
+}
+
+.enlaces {
+    display: flex;
+    background-color: #a75f6e9a;
+    margin: auto;
+}
+
+.enlaces li{
+    display: inline-block;
+}
+
+.enlaces li a {
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px 74.2px;
+    color: rgb(251, 255, 0);
+    display: inline-flex;
+}
+
+.enlaces li a:hover{
+    background-color: rgb(112, 87, 202);
+}
+
+
+@media (max-width: 450px)
+{
+    .flex-main{
+        flex-direction: column;
+    }
+    .enlaces {
+        display: flex;
+        background-color: #EB4263;
+        border-radius: 2px; 
+        margin: 10px 15px;
+    }
+    .enlaces{
+        flex-direction: column;
+    }
+}
