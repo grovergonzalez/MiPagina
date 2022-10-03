@@ -16,26 +16,19 @@ body{
 video{
     position: absolute;
     top: 0;
-    left: 0;
     width: 100%;
-    height: 100%;
+    height: 160vh;
     object-fit: cover;
 }
 
-.capa{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #1c1c1d;
-    opacity: 0.5;
-    mix-blend-mode: overlay;
+hr{
+    position: relative;
+    z-index: 2;
 }
 
 .nombre{
     color: aqua;
-    padding-top: 0.2%;
+    padding-top: 1px;
     position: relative;
     z-index: 2;
     width: 60%;
@@ -51,11 +44,12 @@ video{
 
 .foto{
     position: absolute;
-    padding-top: 5%;
+    padding-top: 0%;
     z-index: 2;
     height: 200px;
     width: 240px;
-    padding-left: 2%;
+    padding-left: 0%;
+    border: 7px solid blue;
 }
 
 .flex-header{
@@ -66,32 +60,23 @@ video{
 } 
 .flex-main{
     flex-basis: 0%;
-    flex-grow: 1;
+    flex-grow: 0;
     flex-shrink: 1;
     display: flex;
     flex-direction: row;
+    border-right: 2px dashed gray;
+    padding-right: 3%;
 }
 
 .flex-nav{
     flex-basis: 0%;
-    flex-grow: 1;
-    flex-shrink: 1;
-}
-.flex-article{
-    flex-basis: 0%;
-    flex-grow: 4;
-    flex-shrink: 1;
-}
-.flex-aside{
-    flex-basis: 0%;
-    flex-grow: 1;
+    flex-grow: 0.2;
     flex-shrink: 1;
 }
 
-.flex-footer{
-    padding: 2rem;
+.flex-article{
     flex-basis: 0%;
-    flex-grow: 0;
+    flex-grow: 1;
     flex-shrink: 1;
 }
 
@@ -101,39 +86,115 @@ video{
 
 .enlaces {
     display: flex;
-    background-color: #a75f6e9a;
     margin: auto;
+    flex-grow: 1;
 }
 
 .enlaces li{
-    display: inline-block;
+    display: inline-flex;
+    width: auto;
 }
 
 .enlaces li a {
     text-decoration: none;
     font-size: 20px;
-    padding: 10px 74.2px;
+    padding: 10px 70px;
     color: rgb(251, 255, 0);
-    display: inline-flex;
+    display: flex;
 }
 
 .enlaces li a:hover{
     background-color: rgb(112, 87, 202);
 }
 
+.borde-izquierdo{
+    border-left: 4px dashed rgba(63, 6, 218, 0.753);
+}
 
+.parrafo-1{
+    color: #3feb39;
+    z-index: 2;
+    position: relative;
+    padding-right: 0%;
+    text-align: left;
+    border: 2px solid rgba(63, 6, 218, 0.753);
+}
+.parrafo-2{
+    color: aqua;
+    z-index: 2;
+    position: relative;
+    padding-right: 0%;
+    text-align: right;
+    border: 2px solid rgba(63, 6, 218, 0.753);
+}
+
+.parrafo-3{
+    color: rgb(251, 132, 255);
+    z-index: 2;
+    position: relative;
+    padding-right: 0%;
+    text-align: right;
+    border: 2px solid rgba(63, 6, 218, 0.753);
+}
+
+footer {
+    width: 84%;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    padding: 11rem 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 @media (max-width: 450px)
 {
     .flex-main{
         flex-direction: column;
     }
-    .enlaces {
-        display: flex;
-        background-color: #EB4263;
-        border-radius: 2px; 
-        margin: 10px 15px;
-    }
     .enlaces{
         flex-direction: column;
     }
+}
+.Redes-Sociales{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-left: 20%;
+}
+
+.Icono{
+    background-color: #f2f2f2;
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    border: 1px solid #f2f2f2;
+    background-image: url(git.png);
+    background-position: center;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    margin: 1rem;
+}
+
+.Icono:hover {
+    background-color: white;
+    filter: invert(1);
+}
+
+.Icono:nth-of-type(1) {
+    background-image: url(gmail.png);
+}
+
+.Icono:nth-of-type(2) {
+    background-image: url(facebook.png);
+}
+
+.Icono:nth-of-type(3) {
+    background-image: url(Instagram.png);
+}
+
+.Icono:nth-of-type(4) {
+    background-image: url(Whatsapp.png);
 }
