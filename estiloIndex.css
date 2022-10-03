@@ -258,3 +258,29 @@ footer {
 .Icono:nth-of-type(4) {
     background-image: url(Whatsapp.png);
 }
+
+.foto-1{
+    width: 33.5%;
+}
+.foto-2{
+    width: 20%;
+}
+.foto-3{
+    width: 20%;
+    height: 20%;
+}
+.foto-4{
+    width: 75%;
+}
+.foto-5{
+    width: 75%;
+}
+.foto-6{
+    width: 40%;
+}
+.foto-7{
+    width: 40%;
+}
+.foto-8{
+    width: 90%;
+}
