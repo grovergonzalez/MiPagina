@@ -13,16 +13,16 @@ body{
 .contenedor{
     width: 100vw;
     height: 300vh;
-    background-color: #0A043C;
+    background-color: #222831;
 }
 .titulo{
     height: 10%;
     text-align: center;
-    color: aqua;
+    color: #DDDDDD;
 }
 .nombre{
     text-align: center;
-    color: rgb(255, 27, 225);
+    color: #F05454;
     padding-left: 10%;
     padding-right: 10%;
     align-items: center;
@@ -72,7 +72,7 @@ body{
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: #d17225;
+    background-color: #30475E;
     border: 4px double #85e9e0;
 }
 .menu a{
@@ -106,10 +106,10 @@ body{
     height: 25%;
     align-items: center;
     justify-content: center;
-    background-color: #C84B31;
+    background-color: #DDDDDD;
 }
 .textoPerfil{
-    color: white;
+    color: #30475E;
     text-align: center;
     font-size: x-large;
     width: 50%;
@@ -118,17 +118,20 @@ body{
     align-items: center;
     width: 50%;
 }
+.fotoPerfil img{
+    border-radius: 85px;
+}
 /* Contenedor 1 */
 .contenedor1{
     height: 25%;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #346751;
+    background-color: #30475E;
 }
 .textoContenedor1{
     text-align: right;
-    color: rgb(223, 255, 42);
+    color: #DDDDDD;
     font-size: x-large;
     width: 50%;
 }
@@ -140,6 +143,9 @@ body{
     text-align: center;
     width: 50%;
 }
+.fotoTenis img{
+    border-radius: 85px;
+}
 /* Contenedor 2 */
 .contenedor2{
     height: 25%;
@@ -147,13 +153,17 @@ body{
     align-items: center;
     justify-content: center;
     text-align: center;
+    background-color: #DDDDDD;
 }
 .fotoNaturaleza{
     width: 50%;
 }
+.fotoNaturaleza img{
+    border-radius: 85px;
+}
 .textoContenedor2{
     text-align: left;
-    color: rgb(255, 184, 53);
+    color: #222831;
     font-size: x-large;
     width: 50%;
 }
@@ -168,7 +178,7 @@ body{
 }
 .frase{
     height: 20%;
-    color: rgb(231, 95, 95);
+    color: #F05454;
     font-size: xx-large;
     text-align: center;
     text-decoration: underline aqua;
