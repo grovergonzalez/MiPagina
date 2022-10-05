@@ -271,3 +271,14 @@ body{
         justify-content: center;
     }
 }
+
+img:hover{
+    background-color: #8599bd;
+    box-shadow: #512fa1 -1px 1px, #512fa1 -2px 2px, #512fa1 -3px 3px, #512fa1 -4px 4px, #512fa1 -5px 5px, #512fa1 -6px 6px, #512fa1 -7px 7px, #512fa1 -8px 8px, #512fa1 -9px 9px, #512fa1 -10px 10px;
+    transform: translate3d(6px, -6px, 0);
+    font-weight: bold;
+    transition-delay: 0s;
+        transition-duration: 1s;
+        transition-property: all;
+    transition-timing-function: line;
+}
